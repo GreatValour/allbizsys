@@ -480,7 +480,59 @@ fieldset {
     border-radius: 5px !important;
     margin: 5px 5px 5px 10px !important;
     padding: 17px 5px 10px 10px !important;
-}		</style>
+}		
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+  }
+
+  /* Style when checkbox is checked */
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  /* Custom checkmark design */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+</style>
+</style>
 		</head>
 
 <body class="page-template-default page page-id-9842 header-sticky  ct-gradient-same  btn-type-normal  fixed-footer  mobile-header-light elementor-default elementor-kit-9156 elementor-page elementor-page-9842">
@@ -639,11 +691,11 @@ fieldset {
 </div>
 </fieldset>
 <p><br/></p>
-<label for="consent-checkbox">
-    <input type="checkbox" id="consent-checkbox" name="consent-checkbox" required>
-    By submitting my information, I acknowledge that this loan application will not impact my credit score. I authorize BorrowWave to obtain a consumer report about me from a consumer reporting agency, in accordance with applicable laws and regulations. Please note that the presentation of a pre-qualified loan amount does not guarantee loan approval. Additionally, the terms of the loan offers presented on this website may differ from those offered through BorrowWave locations, direct mail, or other online channels.
-  </label>
-</p>
+<div class="checkbox-container">
+    <input type="checkbox" id="employmentCheckbox" name="employmentCheckbox">
+    <label for="employmentCheckbox">I agree to the terms and conditions</label>
+    <span class="checkmark"></span>
+  </div>
 
 <div class="form-submit">
                             <input type="submit" value="SUBMIT" class="wpcf7-form-control has-spinner wpcf7-submit submit" />

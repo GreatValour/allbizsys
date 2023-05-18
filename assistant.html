@@ -480,7 +480,57 @@ fieldset {
     border-radius: 5px !important;
     margin: 5px 5px 5px 10px !important;
     padding: 17px 5px 10px 10px !important;
-}		</style>
+}		
+button {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #1528cc;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+}
+
+button span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #e70d0d;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  -webkit-box-shadow: 0 0.4em 0.1em 0.019em #fff;
+          box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+button span:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate(0, 0.4em);
+      -ms-transform: translate(0, 0.4em);
+          transform: translate(0, 0.4em);
+  -webkit-box-shadow: 0 0 0 0 #fff;
+          box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+
+</style>
 		</head>
 
 <body class="page-template-default page page-id-9842 header-sticky  ct-gradient-same  btn-type-normal  fixed-footer  mobile-header-light elementor-default elementor-kit-9156 elementor-page elementor-page-9842">
@@ -587,7 +637,11 @@ fieldset {
 
 <div class="apply-link" style="display:none;"><link text="Apply Now" linktype="external" url="https://concentrajobs-selectmedicalcorp.icims.com/jobs/242851/candidate?from=login&amp;back=intro" anchor="" target="_blank" /></div>
 </div></div><div class="field-title job-title" itemprop="title"><h1>Personal Assistant</h1></div><div class="row job-row">
-
+    <a href="apply-assistant.html">
+        <button>
+          <span>Apply Now</span>
+        </button>
+      </a>
 <h2>
     <div class="label">Overview</div>
 </h2>
